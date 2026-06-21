@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Shivom Gupta</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <!-- Mobile-friendly styles -->
+    <style>
+    .nav-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-row {
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .nav-row li {
+        margin: 0;
+        flex: 1;
+    }
+
+    .nav-row li a {
+        display: block;
+        border: 1px solid #fff;
+        padding: 0.8em 1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        white-space: nowrap;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 0.9em;
+    }
+
+    /* Remove left border from all buttons except the first */
+    .nav-row li:not(:first-child) a {
+        border-left: none;
+    }
+
+    /* Override any conflicting styles from main.css */
+    nav ul li a,
+    #nav ul li a {
+        border-left: none !important;
+    }
+
+    /* Ensure the first button in each row keeps its left border */
+    .nav-row li:first-child a {
+        border-left: 1px solid #fff !important;
+    }
+
+    /* Mobile-only CV images */
+    .mobile-only {
+        display: none;
+    }
+
+    /* Mobile-specific styles */
+    @media screen and (max-width: 768px) {
+        .nav-group {
+            gap: 0.5rem;
+        }
+        
+        .nav-row {
+            flex-direction: column;
+            width: 90%;
+            max-width: 300px;
+        }
+        
+        .nav-row li {
+            width: 100%;
+        }
+        
+        .nav-row li a {
+            padding: 1em;
+            font-size: 0.8em;
+            border: 1px solid #fff;
+            border-bottom: none;
+        }
+        
+        .nav-row li:last-child a {
+            border-bottom: 1px solid #fff;
+        }
+        
+        .nav-row li:not(:first-child) a {
+            border-left: 1px solid #fff;
+        }
+        
+        /* Adjust header content for mobile */
+        #header .content .inner h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        #header .content .inner p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        /* Make logo smaller on mobile */
+        #header .logo img {
+            height: 40px;
+        }
+
+        /* Show mobile-only content on mobile */
+        .mobile-only {
+            display: block;
+        }
+
+        /* Hide PDF embed on mobile */
+        .cv-pdf {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .nav-row {
+            max-width: 280px;
+        }
+        
+        .nav-row li a {
+            padding: 0.9em;
+            font-size: 0.75em;
+        }
+        
+        #header .content .inner h1 {
+            font-size: 1.8rem;
+        }
+        
+        #header .content .inner p {
+            font-size: 0.8rem;
+        }
+        
+        #header .logo img {
+            height: 35px;
+        }
+    }
+
+    /* Ensure articles are mobile-friendly */
+    @media screen and (max-width: 768px) {
+        #main article {
+            padding: 2rem 1.5rem;
+        }
+        
+        #main article h2 {
+            font-size: 1.5rem;
+        }
+        
+        #main article p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* Make embedded PDF responsive */
+        #main article embed {
+            height: 500px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        #main article {
+            padding: 1.5rem 1rem;
+        }
+        
+        #main article h2 {
+            font-size: 1.3rem;
+        }
+        
+        #main article p {
+            font-size: 0.85rem;
+        }
+        
+        #main article embed {
+            height: 400px;
+        }
+    }
+
+    /* Desktop-only content */
+    .desktop-only {
+        display: block;
+    }
+
+    @media screen and (max-width: 768px) {
+        .desktop-only {
+            display: none;
+        }
+    }
+    </style>
+
+  </head>
+  <body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <div class="logo">
+          <a href="https://sites.wustl.edu/complexmemlab/">
+            <img src="images/ComplexML-brain_w.png" height="50" alt="Lab Logo" />
+          </a>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h1>Angelique I. Delarazan</h1>
+            <p>PhD Graduate Student<br />
+              Psychological & Brain Sciences | Washington University in St. Louis
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobile-Friendly Navigation -->
+        <nav>
+          <div class="nav-group">
+            <!-- First Row -->
+            <ul class="nav-row">
+              <li><a href="#about">About Me</a></li>
+            </ul>
+            <ul class="nav-row secondary-nav">
+              <li><a href="#research">Research</a></li>
+              <li><a href="#teaching">Teaching</a></li>
+            </ul>
+            <!-- Second Row -->
+            <ul class="nav-row secondary-nav">
+              <li><a href="#cv">CV</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About Me -->
+							<article id="about">
+								<h2 class="major">About Me</h2>
+								<span class="image circle"><img src="images/aidelarazan1.jpg"></span>
+								<p>Growing up in a poverty-stricken community where schools were underperforming, and test scores were far below the state average, I never had the luxury of exploring the "what-ifs" of becoming a scientist. Hello! I'm Shivom Gupta, a researcher, educator, and science communicator driven by a lifelong curiosity about complex systems. My academic and professional journey has taken me across three seemingly different disciplines—Aeronautical Engineering, Astrophysics, and Cognitive Neuroscience—all connected by a common goal: understanding how intricate systems behave, evolve, and generate emergent phenomena.</p>
+								<p>I currently work as a Research Associate at the Institute of Science and Spirituality (ISS), Delhi, where I study the neural and physiological mechanisms underlying meditation, attention, and consciousness. My research focuses on EEG analysis, neural time-series modeling, microstate dynamics, autonomic physiology, and computational approaches to understanding human cognition. I am particularly interested in how modern data science and neuroscience can be used to investigate questions that have traditionally belonged to contemplative traditions and philosophy. </p>
+
+								<p>Before entering neuroscience, I completed a Master's degree in Astrophysics at the University of Geneva, Switzerland, where I worked at the Geneva Observatory on exoplanet research. My thesis explored the detection of reflected light from hot Jupiters using data from NASA's TESS mission. By combining Bayesian inference, Gaussian Processes, MCMC techniques, and transit models, I contributed to the detection and characterization of several planetary systems. This experience strengthened my passion for data-driven discovery and scientific programming.</p>
+								<p>Alongside research, I have spent nearly a decade working in science education and public engagement. I have taught astronomy and scientific thinking to students ranging from primary school learners to university fellows, developed educational resources, trained teachers, organized outreach programs, and contributed to initiatives associated with major international projects such as LIGO-India and the Thirty Meter Telescope. Through these experiences, I discovered that communicating science effectively is just as important as conducting the research itself.</p>
+								<p>I am also deeply interested in curriculum design and mentorship. Whether teaching exoplanet detection techniques to gifted high-school students, guiding undergraduate researchers, or designing inquiry-based learning experiences, I enjoy helping others develop the skills and confidence needed to engage with scientific research. I believe that education should not simply transfer knowledge but inspire curiosity, creativity, and critical thinking.</p>
+								<p>Technically, I work primarily in Python, with interests spanning statistical modeling, Bayesian inference, machine learning, signal processing, and scientific visualization. My current projects involve EEG analysis, meditation research, Gaussian Process modeling, physiological sensing, and open-source scientific workflows. At the same time, I continue to maintain an active interest in astronomy, exoplanets, planetary habitability, and the search for life beyond Earth.</p>
+								<p>This website brings together my research, teaching, outreach activities, publications, talks, and open-source projects. Whether exploring distant planetary systems or the dynamics of the human brain, I remain fascinated by one central question: how complex systems give rise to meaningful patterns, behaviors, and experiences.</p>
+							</article>
+
+						<!-- Research -->
+							<article id="research">
+								<h2 class="major">Research</h2>
+								<p>My research interests span cognitive psychology and cognitive neuroscience with a focus on memory for naturalistic experiences and their neural underpinnings. An overwhelming amount of psychological memory studies have relied on simplistic stimuli such as learning a sequence of items (for example, a list of words) and later retrieving them. While these studies remain foundational and necessary to our understanding of memory processes, the real world encompasses so much more and consists of different components including the individual items, location, perceptual, and narrative information. I am particularly interested in assessing exactly how the components of memories are organized and how the neural mechanisms that support them operate at its core.</p>
+								<span class="image main"><img src="images/research1.jpg" alt="" /></span>
+								<p><center><b>PUBLICATIONS</b></center></p>
+								<p><a href="https://osf.io/preprints/psyarxiv/paq8e_v1"><b>Delarazan A. I.</b>, March, K., Markantonakis, E., Dy, J. & Reagh Z.M., (in press). Aging shifts recall of naturalistic events from temporal to topic organization. Psychology and Aging.</a></p>
+								<p><a href="https://osf.io/preprints/psyarxiv/dfxbg_v2"><b>Delarazan A. I.</b>, Bosak, E., Cohn-Sheehy, B.I., Foureaux-Lee, V., Zacks J.M. & Reagh, Z.M. (2025). Narrative coherence warps the timeline of recalled naturalistic events. Journal of Experimental Psychology: Learning, Memory, and Cognition.</a></p>
+								<p><a href="https://learnmem.cshlp.org/content/30/2/48.short"><b>Delarazan, A. I.</b>, Ranganath, C., & Reagh, Z. M. (2023). Aging impacts memory for perceptual, but not narrative, event details. Learning & Memory, 30(2), 48-54</a></p>
+								<p><a href="https://link.springer.com/article/10.3758/s13421-021-01178-x">Cohn-Sheehy, B. I., <b>Delarazan, A. I.</b>, Crivelli-Decker, J. E., Reagh, Z. M., Mundada, N. S., Yonelinas, A. P., ... & Ranganath, C. (2022). Narratives bridge the divide between distant events in episodic memory. Memory & cognition, 50(3), 478-494.</a></p>
+								<p><a href="https://www.cell.com/current-biology/pdf/S0960-9822(21)01253-7.pdf">Cohn-Sheehy, B. I., <b>Delarazan, A. I.</b>, Reagh, Z. M., Crivelli-Decker, J. E., Kim, K., Barnett, A. J., ... & Ranganath, C. (2021). The hippocampus constructs narrative memories across distant events. Current Biology, 31(22), 4935-4945.</a></p>
+								<p><a href="https://www.nature.com/articles/s41467-020-17713-4">Reagh, Z. M., <b>Delarazan, A. I.</b>, Garber, A., & Ranganath, C. (2020). Aging alters neural activity at event boundaries in the hippocampus and Posterior Medial network. Nature communications, 11(1), 1-12.</a></p>
+								<p><center><b>SELECTED TALKS AND PRESENTATIONS</b></center></p>
+								<p><b>Delarazan, A. I.</b>, Bhoga, T., March, K., & Reagh, Z. M. (April 2025). The roles of event content and recall specificity in shaping representations of naturalistic narratives. Poster presented at the Cognitive Neuroscience Society (CNS) Conference. Boston, MA.</p>
+								<p><b>Delarazan, A. I.</b>, Elena Bosak, Jeffrey M. Zacks, Zachariah M. Reagh (April 2024). Narrative coherence bends the arrow of time when recalling naturalistic events. Cognitive Neuroscience Society (CNS) Conference. Toronto, CA.</p>
+								<p><b>Delarazan, A. I.</b>, (March 2024). Age-related changes in representing and remembering complex events. 3 Minute Thesis (3MT) Competition. St. Louis, MO.</p>
+								<p>Lee, V., <b>Delarazan, A. I.</b>, Reagh, Z.M. (October 2023). Differences in narrative memory for cross lingual processing in Spanish-English bilinguals. VII Medical Organization for Latino Advancement (MOLA) Latino Health Symposium. Chicago, IL.</p>
+								<p><b>Delarazan, A. I.</b>, Liu, X., Nguyen, M., Dhanak, R., Guduputi, A., Macalalad, E.M., Karagoz, A.B., Dy, J., Markantonakis, E., Garber, A., Chaudhury, H., Ranganath, C., and Reagh, Z.M (April 2023). Age-related changes in representing and remembering complex events. International Conference on Learning and Memory (LearnMem). Huntington Beach, CA.</p>
+								<p>Morse, S. J., Karagoz, A. B., <b>Delarazan, A. I.</b>, and Reagh, Z.M (April 2023). Event boundaries at encoding enhance mnemonic discrimination of end-event items. International Conference on Learning and Memory (LearnMem). Huntington Beach, CA.</p>
+								<p><b>Delarazan, A. I.</b>, Morse, S. J., Bosak, E., Lee, V. F., Cohn-Sheehy, B. I., Zacks, J. M. & Reagh, Z. M., (May 2022). Bridging the gap: The role of temporal lag in binding events into coherent memories. Context and Episodic Memory Symposium (CEMS). Philadelphia, PA.</p>
+								<p>Bosak, E., <b>Delarazan, A. I.</b>, & Reagh, Z. M. (April 2022). Narrative recall: A study of coherence and narrative linearity. Washington University Spring Celebration Undergraduate Research Conference in St. Louis, MO.</p>
+								<p>Lee, V., <b>Delarazan, A. I.</b>, & Reagh, Z. M. (April 2022). How do similar experiences influence the forgetting of items and contextual associations over time. Washington University Spring Celebration Undergraduate Research Conference in St. Louis, MO.</p>
+								<p><b>Delarazan, A. I.</b>, Karagoz, A. B., Montchal, M. E., Yassa, M. A., Ranganath, C., & Reagh, Z. M., (2021). Hippocampal and entorhinal contributions to naturalistic event context reinstatement. Society for Neuroscience (SfN) Conference in Chicago, IL.</p>
+							</article>
+
+						<!-- Teaching -->
+							<article id="teaching">
+								<h2 class="major">Teaching</h2>
+								<p>What makes an experience memorable? Why do some experiences remain etched in our minds while others fade away? These questions have guided both my research and approach to teaching. As a memory researcher, I studied how we comprehend and retain experiences that reflect the real-world using naturalistic stimuli such as films and narratives. Across my experiments, I learned that we tend to remember moments that are engaging, meaningful, and reinforced through ongoing learning. The same principles that shape what we remember also emerge in the classroom. More importantly, these same principles form the foundation of my teaching philosophy. I believe students learn best when they actively engage with the material, connect it to their own experiences, and build on their prior knowledge over time. I aim to provide a learning experience that leave students not only with a strong foundation in psychology and cognitive neuroscience, but with the confidence and curiosity to carry those ideas forward long after the course ends.</p>
+								<p><center><b>COURSES</b></center></p>
+								<div style="margin-bottom: 1.5em;">
+									<b>Role(s):</b> Instructor; Co-Instructor<br>
+									<b>Course:</b> Psych 100B Introduction to Psychology<br>
+									<b>Institution:</b> Washington University in St. Louis<br>
+									<b>Course Description:</b> A survey and analysis of concepts, theory, and research covering the areas of biological psychology, human development, learning, memory, social psychology, and mental disorders and their treatment. This is a general survey course designed to introduce students to the diversity of topics, research methods, and theories that comprise the study of mind and behavior.
+								</div>
+
+								<div style="margin-bottom: 1.5em;">
+									<b>Role(s):</b> Instructor<br>
+									<b>Course:</b> Psych 102 Contemporary Issues in Psychology<br>
+									<b>Institution:</b> Washington University in St. Louis<br>
+									<b>Course Description:</b> Seminar course that enables students to explore several of the ideas and issues in contemporary psychology. Students familiarize themselves with critical aspects of the issue and discuss and critically evaluate the pros and cons of each side.
+								</div>
+
+								<div style="margin-bottom: 1.5em;">
+									<b>Role(s):</b> Instructor; Assistant to Instructor<br>
+									<b>Course:</b> Psych 301 Experimental Psychology<br>
+									<b>Institution:</b> Washington University in St. Louis<br>
+									<b>Course Description:</b> A course that provides training in the logic, techniques, and design of psychology experiments. Topics include experimental design and control, library research, quantitative treatment of data, graphical presentation of results, and clarity of scientific writing. Lectures focus on general principles of experimentation, whereas the laboratory sections introduce a range of psychological phenomena through hands-on experience in experimentation.
+								</div>
+
+								<div style="margin-bottom: 1.5em;">
+									<b>Role(s):</b> Assistant to Instructor<br>
+									<b>Course:</b> Psych 380 Human Learning and Memory<br>
+									<b>Institution:</b> Washington University in St. Louis<br>
+									<b>Course Description:</b> A survey of issues related to the encoding, storage, and retrieval of information in humans. Topics include memory improvement strategies, people with extraordinary memories, memory illusions and distortions, among other topics.
+								</div>
+
+								<div style="margin-bottom: 1.5em;">
+									<b>Role(s):</b> Co-Instructor; Assistant to Instructor<br>
+									<b>Course:</b> Psych 3604 Cognitive Neuroscience<br>
+									<b>Institution:</b> Washington University in St. Louis; Washington University in St. Louis Continuing and Professional Studies (CAPS)<br>
+									<b>Course Description:</b> A general introduction to the underlying principles and mechanisms of brain function that give rise to complex human cognitive behavior. Emphasis will be placed on how emerging methods and approaches from both neuroscience and cognitive psychology have been integrated to yield new insights into the organization and structure of higher mental processes. Topics include perception, attention, memory, language, and executive control.
+								</div>
+								
+							</article>
+
+						<!-- CV -->
+							<article id="cv">
+								<h2 class="major">Curriculum Vitae</h2>
+								
+								<!-- Mobile-only CV images -->
+								<div class="cv-images mobile-only">
+									<img src="images/cv/Delarazan_CV_January2026_Page1.jpg" alt="CV Page 1" style="width:100%; margin-bottom:10px;">
+									<img src="images/cv/Delarazan_CV_January2026_Page2.jpg" alt="CV Page 2" style="width:100%;">
+                                    <img src="images/cv/Delarazan_CV_January2026_Page3.jpg" alt="CV Page 3" style="width:100%;">
+                                    <img src="images/cv/Delarazan_CV_January2026_Page4.jpg" alt="CV Page 4" style="width:100%;">
+                                    <img src="images/cv/Delarazan_CV_January2026_Page5.jpg" alt="CV Page 5" style="width:100%;">
+                                    <img src="images/cv/Delarazan_CV_January2026_Page6.jpg" alt="CV Page 6" style="width:100%;">
+                                    <img src="images/cv/Delarazan_CV_January2026_Page7.jpg" alt="CV Page 7" style="width:100%;">
+                                    <img src="images/cv/Delarazan_CV_January2026_Page8.jpg" alt="CV Page 8" style="width:100%;">
+                                    <img src="images/cv/Delarazan_CV_January2026_Page9.jpg" alt="CV Page 9" style="width:100%;">
+								</div>
+								
+								<!-- Desktop-only PDF embed -->
+								<div class="desktop-only">
+									<embed src="images/Delarazan_CV_January2026.pdf" type="application/pdf" width="100%" height="800px" />
+								</div>
+								
+								<p><center><a href="images/Delarazan_CV_January2026.pdf" target="_blank">Download CV</a></center></p>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<ul class="icons">
+									<li><a href="mailto: a.delarazan@wustl.edu" class="icon communications far fa-envelope-open"><span class="label">Email</span></a></li>
+									<li><a href="https://scholar.google.com/citations?user=k287wQ4AAAAJ&hl=en&oi=ao" class="icon brands fa fa-google"><span class="label">Google Scholar</span></a></li>
+									<li><a href="https://github.com/aidelarazan" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									<li><a href="https://twitter.com/aidelarazan" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.linkedin.com/in/angelique-delarazan" class="icon brands fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+								</ul>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Angelique I. Delarazan. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
