@@ -1,0 +1,494 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Shivom Gupta</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <!-- Mobile-friendly styles -->
+    <style>
+    .nav-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-row {
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .nav-row li {
+        margin: 0;
+        flex: 1;
+    }
+
+    .nav-row li a {
+        display: block;
+        border: 1px solid #fff;
+        padding: 0.8em 1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        white-space: nowrap;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 0.9em;
+    }
+
+    /* Remove left border from all buttons except the first */
+    .nav-row li:not(:first-child) a {
+        border-left: none;
+    }
+
+    /* Override any conflicting styles from main.css */
+    nav ul li a,
+    #nav ul li a {
+        border-left: none !important;
+    }
+
+    /* Ensure the first button in each row keeps its left border */
+    .nav-row li:first-child a {
+        border-left: 1px solid #fff !important;
+    }
+
+    /* Mobile-only CV images */
+    .mobile-only {
+        display: none;
+    }
+
+    /* Mobile-specific styles */
+    @media screen and (max-width: 768px) {
+        .nav-group {
+            gap: 0.5rem;
+        }
+        
+        .nav-row {
+            flex-direction: column;
+            width: 90%;
+            max-width: 300px;
+        }
+        
+        .nav-row li {
+            width: 100%;
+        }
+        
+        .nav-row li a {
+            padding: 1em;
+            font-size: 0.8em;
+            border: 1px solid #fff;
+            border-bottom: none;
+        }
+        
+        .nav-row li:last-child a {
+            border-bottom: 1px solid #fff;
+        }
+        
+        .nav-row li:not(:first-child) a {
+            border-left: 1px solid #fff;
+        }
+        
+        /* Adjust header content for mobile */
+        #header .content .inner h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        #header .content .inner p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        /* Make logo smaller on mobile */
+        #header .logo img {
+            height: 40px;
+        }
+
+        /* Show mobile-only content on mobile */
+        .mobile-only {
+            display: block;
+        }
+
+        /* Hide PDF embed on mobile */
+        .cv-pdf {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .nav-row {
+            max-width: 280px;
+        }
+        
+        .nav-row li a {
+            padding: 0.9em;
+            font-size: 0.75em;
+        }
+        
+        #header .content .inner h1 {
+            font-size: 1.8rem;
+        }
+        
+        #header .content .inner p {
+            font-size: 0.8rem;
+        }
+        
+        #header .logo img {
+            height: 35px;
+        }
+    }
+
+    /* Ensure articles are mobile-friendly */
+    @media screen and (max-width: 768px) {
+        #main article {
+            padding: 2rem 1.5rem;
+        }
+        
+        #main article h2 {
+            font-size: 1.5rem;
+        }
+        
+        #main article p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* Make embedded PDF responsive */
+        #main article embed {
+            height: 500px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        #main article {
+            padding: 1.5rem 1rem;
+        }
+        
+        #main article h2 {
+            font-size: 1.3rem;
+        }
+        
+        #main article p {
+            font-size: 0.85rem;
+        }
+        
+        #main article embed {
+            height: 400px;
+        }
+    }
+
+    /* Desktop-only content */
+    .desktop-only {
+        display: block;
+    }
+
+    @media screen and (max-width: 768px) {
+        .desktop-only {
+            display: none;
+        }
+    }
+    </style>
+
+  </head>
+  <body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.jpg" height="50" alt="" />
+          </a>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h1>Shivom Gupta</h1>
+            <p>Research Associate, Institute of Science and Spirituality (ISS), Delhi<br>
+               Science Lead, Sakshi Sense<br>
+               M.Sc. Astrophysics, University of Geneva<br>
+               Cognitive Neuroscience • Meditation Research • Exoplanets</p>
+          </div>
+        </div>
+
+        <!-- Mobile-Friendly Navigation -->
+        <nav>
+          <div class="nav-group">
+            <!-- First Row -->
+            <ul class="nav-row">
+              <li><a href="#about">About Me</a></li>
+            </ul>
+            <ul class="nav-row secondary-nav">
+              <li><a href="#research">Research</a></li>
+              <li><a href="#Supervision">Supervision</a></li>
+              <li><a href="#Outreach">Outreach</a></li>
+            </ul>
+            <!-- Second Row -->
+            <ul class="nav-row secondary-nav">
+              <li><a href="#cv">CV</a></li>
+              <li><a href="#Others">Others</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About Me -->
+							<article id="about">
+								<h2 class="major">About Me</h2>
+								<span class="image circle"><img src="images/shivom.jpg"></span>
+								<p>Growing up in a poverty-stricken community where schools were underperforming, and test scores were far below the state average, I never had the luxury of exploring the "what-ifs" of becoming a scientist. Hello! I'm Shivom Gupta, a researcher, educator, and science communicator driven by a lifelong curiosity about complex systems. My academic and professional journey has taken me across three seemingly different disciplines—Aeronautical Engineering, Astrophysics, and Cognitive Neuroscience—all connected by a common goal: understanding how intricate systems behave, evolve, and generate emergent phenomena.</p>
+								<p>I currently work as a Research Associate at the Institute of Science and Spirituality (ISS), Delhi, where I study the neural and physiological mechanisms underlying meditation, attention, and consciousness. My research focuses on EEG analysis, neural time-series modeling, microstate dynamics, autonomic physiology, and computational approaches to understanding human cognition. I am particularly interested in how modern data science and neuroscience can be used to investigate questions that have traditionally belonged to contemplative traditions and philosophy. </p>
+
+								<p>Before entering neuroscience, I completed a Master's degree in Astrophysics at the University of Geneva, Switzerland, where I worked at the Geneva Observatory on exoplanet research. My thesis explored the detection of reflected light from hot Jupiters using data from NASA's TESS mission. By combining Bayesian inference, Gaussian Processes, MCMC techniques, and transit models, I contributed to the detection and characterization of several planetary systems. This experience strengthened my passion for data-driven discovery and scientific programming.</p>
+								<p>Alongside research, I have spent nearly a decade working in science education and public engagement. I have taught astronomy and scientific thinking to students ranging from primary school learners to university fellows, developed educational resources, trained teachers, organized outreach programs, and contributed to initiatives associated with major international projects such as LIGO-India and the Thirty Meter Telescope. Through these experiences, I discovered that communicating science effectively is just as important as conducting the research itself.</p>
+								<p>I am also deeply interested in curriculum design and mentorship. Whether teaching exoplanet detection techniques to gifted high-school students, guiding undergraduate researchers, or designing inquiry-based learning experiences, I enjoy helping others develop the skills and confidence needed to engage with scientific research. I believe that education should not simply transfer knowledge but inspire curiosity, creativity, and critical thinking.</p>
+								<p>Technically, I work primarily in Python, with interests spanning statistical modeling, Bayesian inference, machine learning, signal processing, and scientific visualization. My current projects involve EEG analysis, meditation research, Gaussian Process modeling, physiological sensing, and open-source scientific workflows. At the same time, I continue to maintain an active interest in astronomy, exoplanets, planetary habitability, and the search for life beyond Earth.</p>
+								<p>This website brings together my research, teaching, outreach activities, publications, talks, and open-source projects. Whether exploring distant planetary systems or the dynamics of the human brain, I remain fascinated by one central question: how complex systems give rise to meaningful patterns, behaviors, and experiences.</p>
+							</article>
+
+						<!-- Research -->
+							<article id="research">
+								<h2 class="major">Research</h2>
+								<p><center><b>PUBLICATIONS & MANUSCRIPTS</b></center></p>
+
+<p>
+<b>Gupta, S.</b> & Beuria, J. (in preparation).
+Age-Related Alterations in EEG Microstate Dynamics During Audio-Visual Selective Attention and Attention Switching.
+<i>Target Journal: Frontiers in Human Neuroscience.</i>
+</p>
+
+<p>
+Sharma, M., Srivastava, P. C., <b>Gupta, S.</b>, Kumar, P., & Beuria, J. (under review).
+Toward HRV Markers of Mind Wandering During Meditation.
+<i>Peer-reviewed manuscript.</i>
+</p>
+
+<p>
+Srivastava, P. C., <b>Gupta, S.</b>, Sharma, M., Beuria, J., & Kumar, P. (under review).
+Contactless Acoustic Respiratory Monitoring for Pranayama Biofeedback Using Deep Learning.
+<i>Peer-reviewed manuscript.</i>
+</p>
+
+<p>
+Sharma, M., Srivastava, P. C., <b>Gupta, S.</b>, Kumar, P., & Beuria, J. (under review).
+Predicting Attentional Lapses During Meditation: Ultra-Short-Term Autonomic Markers for Real-Time Biofeedback.
+<i>Peer-reviewed manuscript.</i>
+</p>
+
+<p><center><b>CONFERENCE PROCEEDINGS & PRESENTATIONS</b></center></p>
+
+<p>
+Sharma, M., Srivastava, P. C., <b>Gupta, S.</b>, Kumar, P., & Beuria, J. (June 2026).
+Predicting Attentional Lapses During Meditation: Ultra-Short-Term Autonomic Markers for Real-Time Biofeedback.
+<i>Mind, Brain and Consciousness Conference (MBCC 2026), IIT Mandi, India.</i>
+Peer-reviewed Oral Presentation.
+</p>
+
+<p>
+Srivastava, P. C., <b>Gupta, S.</b>, Sharma, M., Beuria, J., & Kumar, P. (June 2026).
+Contactless Acoustic Respiratory Monitoring for Pranayama Biofeedback Using Deep Learning.
+<i>Mind, Brain and Consciousness Conference (MBCC 2026), IIT Mandi, India.</i>
+Peer-reviewed Oral Presentation.
+</p>
+
+<p>
+<b>Gupta, S.</b> (November 2015).
+Infrared Spectroscopy: A Method for Remote Sensing of Water and Other Biosignature Gases on Earth-like Planets.
+<i>2nd COSPAR Symposium, Foz do Iguaçu, Brazil.</i>
+Oral Presentation.
+</p>
+
+<p>
+<b>Gupta, S.</b> (November 2015).
+Detection of Marsquakes by Seismic Probes on-board the Mars 2020 Mission: An Indirect Way to Detect Life on Mars.
+<i>2nd COSPAR Symposium, Foz do Iguaçu, Brazil.</i>
+Poster Presentation.
+</p>
+
+<p><center><b>INVITED TALKS & SCIENTIFIC OUTREACH</b></center></p>
+
+<p>
+<b>Gupta, S.</b> (Invited Speaker).
+Exoplanets and the Prospects of Finding Life.
+Astronomy Olympiad Pre-final Camp, MESC, Pune, India.
+</p>
+
+<p>
+<b>Gupta, S.</b> (Invited Speaker).
+Astronomy and Its Relation to the Environment.
+INSPIRE Programme, Inter-University Centre for Astronomy and Astrophysics (IUCAA), Pune, India.
+</p>
+
+<p>
+<b>Gupta, S.</b> (Invited Speaker, Two Occasions).
+Exoplanets, Modern Astronomy, and Careers in Astronomy.
+Jabalpur Vigyan Parishad (JVP) Astronomy Summer School, India.
+</p>
+							</article>
+
+						<!-- Supervision -->
+							<article id="Supervision">
+
+<h2 class="major">Teaching & Mentorship</h2>
+
+<p>
+My teaching philosophy combines scientific rigor with inquiry-driven learning. I have taught students ranging from primary schools to gifted high-school students, undergraduate researchers, and university fellows. My courses emphasize hands-on experimentation, quantitative thinking, and research-based learning.
+</p>
+
+<p><center><b>COURSES</b></center></p>
+
+<div style="margin-bottom:1.5em;">
+<b>Role:</b> Program Instructor<br>
+<b>Course:</b> Alien Earths: In Search of Life Beyond Our Planet<br>
+<b>Institution:</b> Ashoka University (Lodha Genius Programme)<br>
+<b>Description:</b>
+Taught exoplanet detection, planetary habitability, biosignatures, transit photometry, BATMAN modeling, and observational proposal writing to gifted high-school students selected nationally.
+</div>
+
+<div style="margin-bottom:1.5em;">
+<b>Role:</b> Teaching Assistant<br>
+<b>Course:</b> Exploring the Universe<br>
+<b>Institution:</b> Ashoka University, Young India Fellowship<br>
+<b>Description:</b>
+Assisted in teaching astronomy and cosmology to a multidisciplinary cohort of fellows and coordinated assignments, discussions, and final projects.
+</div>
+
+<div style="margin-bottom:1.5em;">
+<b>Role:</b> Instructor<br>
+<b>Course:</b> Basics of Cognitive Neuroscience<br>
+<b>Institution:</b> Institute of Science and Spirituality (ISS)<br>
+<b>Description:</b>
+Designed and taught a month-long research training program for undergraduate interns from IITs and BITS Pilani covering EEG, ECG, GSR, experimental design, and scientific methodology.
+</div>
+
+<div style="margin-bottom:1.5em;">
+<b>Role:</b> Outreach Educator<br>
+<b>Institution:</b> IUCAA & SPACE India<br>
+<b>Description:</b>
+Conducted astronomy workshops, teacher training programs, EarthKAM projects, and outreach activities involving more than 50,000 students.
+</div>
+
+
+<h3>Lodha Genius Programme Mentorship (2025–2026)</h3>
+<p>As Faculty and Program Instructor for Alien Earths: In Search of Life Beyond Our Planet at Ashoka University, I supervised teaching assistants, mentored gifted students, and designed project-based learning experiences.</p>
+<ul>
+<li>Supervised Teaching Assistants across the 2025 and 2026 cohorts.</li>
+<li>Mentored student research projects in exoplanets and habitability.</li>
+<li>Guided observational proposal development and scientific writing.</li>
+<li>Designed coding exercises using transit photometry and BATMAN modelling.</li>
+<li>Provided academic mentoring and project reviews throughout the programme.</li>
+</ul>
+</article>
+
+
+						
+<article id="Outreach">
+<h2 class="major">Outreach & Science Communication</h2>
+<p>For nearly a decade I have been involved in astronomy outreach, STEM education, teacher training, science communication and public engagement activities across India. Through collaborations with educational institutions, research centres and outreach organisations, I have contributed to programmes reaching tens of thousands of students and educators.</p>
+<h3>Astronomy & Space Science Outreach</h3>
+<ul>
+<li>SPACE India astronomy educator and outreach facilitator.</li>
+<li>IUCAA outreach network programmes and public engagement events.</li>
+<li>NASA EarthKAM classroom and citizen-science projects.</li>
+<li>LIGO-India and Thirty Meter Telescope (TMT-India) outreach activities.</li>
+<li>Astronomy Olympiad mentoring, camps and workshops.</li>
+</ul>
+<h3>Teacher Training & STEM Education</h3>
+<ul>
+<li>Teacher development workshops on astronomy and inquiry-based learning.</li>
+<li>Curriculum design for astronomy and space science programmes.</li>
+<li>Hands-on observational astronomy and citizen-science projects.</li>
+</ul>
+<h3>Public Talks</h3>
+<p>Topics include exoplanets, planetary habitability, the search for life beyond Earth, modern astronomy, careers in science, critical thinking and scientific research.</p>
+</article>
+
+
+<!-- CV -->
+							<article id="cv">
+								<h2 class="major">Curriculum Vitae</h2>
+								
+								<!-- Mobile-only CV images -->
+								<div class="cv-images mobile-only">
+									<img src="images/cv/Shivom_CV_May2026_Page1.jpg" alt="CV Page 1" style="width:100%; margin-bottom:10px;">
+									<img src="images/cv/Shivom_CV_May2026_Page2.jpg" alt="CV Page 2" style="width:100%;">
+
+								</div>
+								
+								<!-- Desktop-only PDF embed -->
+								<div class="desktop-only">
+									<embed src="images/Shivom_CV_May2026.pdf" type="application/pdf" width="100%" height="800px" />
+								</div>
+								
+								<p><center><a href="images/Shivom_CV_May2026.pdff" target="_blank">Download CV</a></center></p>
+							</article>
+
+						
+<article id="Others">
+<h2 class="major">Activities & Professional Service</h2>
+<h3>Current Roles</h3>
+<ul>
+<li>Research Associate, Institute of Science and Spirituality (ISS), Delhi.</li>
+<li>Science Lead, Sakshi Sense.</li>
+<li>Teaching Assistant, Young India Fellowship – Exploring the Universe.</li>
+<li>Program Instructor, Lodha Genius Programme – Alien Earths.</li>
+</ul>
+<h3>Professional Activities</h3>
+<ul>
+<li>Curriculum design and STEM programme development.</li>
+<li>EEG, physiological sensing and cognitive neuroscience research.</li>
+<li>Science communication and public engagement.</li>
+<li>Open-source scientific programming and reproducible workflows.</li>
+<li>Student mentoring and project supervision.</li>
+</ul>
+</article>
+
+
+<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<ul class="icons">
+									<li><a href="mailto: shivom.gupta_lgp@ashoka.edu.in" class="icon communications far fa-envelope-open"><span class="label">Email</span></a></li>
+									<li><a href="https://scholar.google.com/citations?user=k287wQ4AAAAJ&hl=en&oi=o" class="icon brands fa fa-google"><span class="label">Google Scholar</span></a></li>
+									<li><a href="https://github.com/Shivom7" class="icon brands fa-github"><span class="label">Github</span></a></li>
+
+									<li><a href="https://twitter.com/shivom03" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.linkedin.com/in/shivomgupta/" class="icon brands fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+								</ul>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Shivom Gupta. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
