@@ -37,3 +37,12 @@
 - Repositioned every section subtitle directly beneath its heading and enlarged section labels.
 - Changed portrait and outreach photography to preserve each complete original frame without cropping.
 - Added a concise research-leadership statement for PhD and academic leadership audiences.
+- Audited all repository/profile URLs; confirmed every GitHub destination belongs to Shivom7 and corrected the EEG page's stale internal anchor.
+- Rebalanced the hero with a larger full-frame portrait and smaller headline, linked Sakshi Sense in the top role line, removed the portrait caption, increased minimum small-text sizes, and linked the MSc thesis to Shivom7/Master_Thesis.
+- Removed the duplicate foreground portrait so the hero displays one large photograph only.
+- Changed the hero photograph to uncropped `contain` framing, reversed the Research heading, expanded physiological/biofeedback keywords, opened the top Sakshi Sense link in a new tab, and tightened research-card numbering spacing.
+- Changed the hero photograph to edge-to-edge coverage so it fills the full vertical hero box.
+- Shifted the hero crop toward the right to reduce the hedge area and preserve the full face.
+- Reduced hero-photo zoom to near-original framing while keeping the box size and applying only a slight left-side crop.
+- Added a restrained scientific pattern and tonal depth behind the single hero photograph to make the remaining panel space feel intentional.
+- Added a persistent system-aware light/dark mode control and strengthened responsive navigation, touch targets, mobile typography, cards and overflow handling.
