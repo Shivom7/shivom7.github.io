@@ -1,6 +1,6 @@
 # Shivom Gupta — Academic Portfolio
 
-A responsive, accessible research portfolio for cognitive neuroscience, scientific computing and astrophysics. The site uses semantic HTML, modern CSS and minimal JavaScript, and deploys directly on GitHub Pages.
+A responsive, accessible portfolio emphasizing human physiology, cognitive neuroscience, experimental design, reproducible scientific computing and research leadership. It deploys directly on GitHub Pages.
 
 ## Local preview
 
@@ -13,9 +13,10 @@ Open `http://localhost:8000`. No build step or package installation is required.
 ## Structure
 
 - `index.html` — main portfolio
-- `eeg-pipeline.html` — EEG documentation scaffold
+- `research-software.html` — reviewed research-code and experiment portfolio
+- `code/` — public, repository-ready project bundles with technical notes
 - `assets/css/portfolio.css` — design system and responsive layout
-- `assets/js/portfolio.js` — mobile navigation and copyright year
+- `assets/js/portfolio.js` — mobile navigation, persistent theme control and copyright year
 - `images/` — portraits, project images and CV
 - `sitemap.xml`, `robots.txt` — search engine discovery
 
@@ -25,4 +26,4 @@ Push the site to the default branch of the `Shivom7/Shivom7.github.io` repositor
 
 ## Content updates
 
-Replace the portrait placeholders on the exoplanet and Sakshi Sense project cards with representative images. Keep descriptive `alt` text, dimensions where known, and `loading="lazy"` for below-the-fold images. Complete the EEG documentation only after reviewing the actual source code and example outputs.
+Project descriptions are based on a static review of the supplied source. Before scientific use, execute the projects with their compatible environments, datasets and acquisition hardware, then retain the generated quality-control evidence. The three folders under `code/` can be moved into separate Git repositories if independent versioning is desired.

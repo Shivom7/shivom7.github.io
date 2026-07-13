@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-07-13
+
+- Replaced the placeholder EEG documentation with a reviewed research-software portfolio covering GPJM simulation, EEG/P300/microstate analysis, and a mixed audiovisual oddball experiment.
+- Added public, repository-ready code bundles with project-specific technical notes, transparent verification status and upstream GPJM attribution.
+- Removed notebook outputs and machine-specific paths from public copies and statically compiled both Python entry points.
+- Replaced the May CV links with `CV_Shivom_Gupta_July26.pdf` and visually verified all three rendered pages.
+- Removed C/C++ from the skills list and strengthened the site narrative around human physiology, multimodal signals, experiment design and reproducible analysis.
+- Removed the old `eeg-pipeline.html` page and updated the sitemap, metadata and internal links.
+
 ## 2026-07-12
 
 ### Added
