@@ -1678,3 +1678,29 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+/* Academic styling additions */
+#header .content{
+ background:rgba(0,0,0,0.58)!important;
+ backdrop-filter:blur(8px);
+ -webkit-backdrop-filter:blur(8px);
+ border-radius:14px;
+ padding:10px;
+}
+#header .content .inner h1,
+#header .content .inner p{
+ text-shadow:0 0 12px rgba(0,0,0,0.9);
+}
+.image.circle{
+ width:280px!important;
+ height:280px!important;
+ margin:1rem auto!important;
+}
+.image.circle img{
+ width:100%!important;
+ height:100%!important;
+ object-fit:contain!important;
+}
+#main article{
+ backdrop-filter:blur(10px);
+ -webkit-backdrop-filter:blur(10px);
+}

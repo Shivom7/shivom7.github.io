@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Data Analysis Pipelines & Experimental Systems | Shivom Gupta</title>
+<meta name="description" content="Shivom Gupta's data-analysis pipelines for latent-state modelling, EEG preprocessing, P300 and microstate analysis, and multimodal experimental design.">
+<meta name="theme-color" content="#071c24">
+<link rel="canonical" href="https://shivom7.github.io/research-software.html">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="assets/css/portfolio.css">
+<link rel="stylesheet" href="assets/css/refinements.css">
+<style>
+.software{max-width:1000px;margin:auto;padding:5rem 1.25rem}.software-intro{max-width:850px}.software-nav{display:flex;gap:.65rem;flex-wrap:wrap;margin:2rem 0 3.25rem}.software-nav a{padding:.5rem .8rem;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:600}.software-project{padding:3.3rem 0;border-top:1px solid var(--line);scroll-margin-top:90px}.project-meta{display:flex;gap:.65rem;flex-wrap:wrap;margin:.9rem 0 1.5rem}.project-meta span{border:1px solid var(--line);border-radius:999px;padding:.3rem .65rem;font-size:.82rem}.project-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:start}.evidence{background:var(--white);border:1px solid var(--line);border-radius:1rem;padding:1.4rem}.evidence h3{font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:var(--teal)}.evidence ul{padding-left:1.2rem}.attribution{margin-top:1.5rem;padding:1rem 1.2rem;border-left:4px solid var(--teal);background:var(--white)}.verification{padding:2rem;border-radius:var(--radius);background:var(--navy);color:#fff;margin:2rem 0}.verification p{color:#c5d5d5}.software h1{font-size:clamp(2.6rem,5.6vw,4.9rem)}.software h2{font-size:clamp(1.8rem,3.4vw,3rem)}html[data-theme="dark"] .evidence,html[data-theme="dark"] .attribution{background:#10282f}@media(max-width:760px){.software{padding-top:3.75rem}.project-layout{grid-template-columns:1fr;gap:1.5rem}.site-header nav{display:flex;position:static;background:none;border:0;padding:0}.site-header nav a:last-child{display:none}}
+@media(max-width:760px){.site-header nav{display:none!important}.software,.software-intro,.software-project{min-width:0}.software h1{font-size:clamp(2.55rem,12vw,3.4rem)}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#software">Skip to projects</a>
+<header class="site-header">
+<a class="brand" href="index.html">
+<span>SG</span> Shivom Gupta</a>
+<nav id="site-nav" aria-label="Project navigation">
+<a href="index.html#research">← Research portfolio</a>
+<a href="https://github.com/Shivom7" target="_blank" rel="noopener noreferrer">GitHub</a>
+</nav>
+</header>
+<main class="software" id="software">
+<div class="software-intro">
+<p class="kicker">Data analysis pipelines & experimental systems</p>
+<h1>From study design to interpretable signals.</h1>
+<p class="lede">Selected code spanning human experiments, physiological-signal quality control, event-related potentials, neural microstates and probabilistic latent-state modelling.</p>
+</div>
+<nav class="software-nav" aria-label="On this page">
+<a href="#gpjm">GPJM simulation</a>
+<a href="#p300">P300 & microstates</a>
+<a href="#oddball">Mixed oddball experiment</a>
+<a href="#verification">Review status</a>
+</nav>
+
+<article class="software-project" id="gpjm">
+<p class="tag">Probabilistic modelling · adapted implementation</p>
+<h2>Gaussian Processes Joint Modeling</h2>
+<div class="project-meta">
+<span>GPflow</span>
+<span>TensorFlow</span>
+<span>Latent dynamics</span>
+<span>Uncertainty</span>
+</div>
+<div class="project-layout">
+<div>
+<p>An updated simulation workflow for joint modelling of neural and behavioural observations. The notebook generates synthetic observations, fits a two-dimensional latent process, produces neural and behavioural predictions with uncertainty intervals, and compares recovered spatial, temporal and spatiotemporal kernels with ground truth.</p>
+<p>The contribution is practical research-engineering work: reviewing and troubleshooting a legacy pipeline, packaging the required modules together, and reorganizing the simulation so the model-recovery stages are inspectable.</p>
+<div class="actions">
+<a class="button primary" href="https://github.com/Shivom7/GPJM_Brain_Latent_States_Pipeline" target="_blank" rel="noopener noreferrer">Open GitHub repository</a>
+<a class="button" href="downloads/gpjm-simulation.zip" download>Download project bundle</a>
+<a class="button" href="code/gpjm-simulation/Simulation_GPJM_complete.ipynb" download>Notebook only</a>
+<a class="button" href="code/gpjm-simulation/README.md">Read technical notes</a>
+</div>
+<p class="attribution">
+<strong>Attribution:</strong> This adaptation is based on the GPJM implementation by Giwon Bahg and collaborators. <a href="https://github.com/giwonbahg/gpjm" target="_blank" rel="noopener noreferrer">View the original repository</a>. The upstream work should be cited when this code is used.</p>
+</div>
+<aside class="evidence">
+<h3>Demonstrated capabilities</h3>
+<ul>
+<li>Gaussian-process latent-variable modelling</li>
+<li>Neural and behavioural joint prediction</li>
+<li>Uncertainty visualization</li>
+<li>Model-recovery and kernel checks</li>
+<li>Legacy scientific-code review</li>
+</ul>
+<a class="text-link" href="code/gpjm-simulation/GPJMv3.py">Inspect model source →</a>
+</aside>
+</div>
+</article>
+
+<article class="software-project" id="p300">
+<p class="tag">EEG analysis · end-to-end pipeline</p>
+<h2>P300, ERP and neural-microstate analysis</h2>
+<div class="project-meta">
+<span>MNE</span>
+<span>pycrostates</span>
+<span>BIDS</span>
+<span>Statsmodels</span>
+<span>Quality control</span>
+</div>
+<div class="project-layout">
+<div>
+<p>A large, configurable workflow for the OpenNeuro <code>ds002893</code> audiovisual attention dataset. It connects raw-data discovery and preprocessing with P300/ERP measurements, microstate modelling, subject- and group-level statistics, figures and run documentation.</p>
+<p>The accompanying MNE notebook documents the preprocessing sequence in a smaller, reviewable form: EDF and event loading, channel metadata, bad-channel handling, filtering, ICA-assisted artefact removal, average referencing, spectral quality control and cleaned-data export.</p>
+<div class="actions">
+<a class="button primary" href="https://github.com/Shivom7/Pipeline_P300_Microstates" target="_blank" rel="noopener noreferrer">Open GitHub repository</a>
+<a class="button" href="downloads/eeg-p300-microstates.zip" download>Download project bundle</a>
+<a class="button" href="code/eeg-p300-microstates/Full_Pipeline_P300_Microstates.py" download>Pipeline only</a>
+<a class="button" href="code/eeg-p300-microstates/Preprocessed_Pipeline_Final_Marker_1.ipynb" download>Preprocessing notebook</a>
+<a class="button" href="code/eeg-p300-microstates/README.md">Read technical notes</a>
+</div>
+</div>
+<aside class="evidence">
+<h3>Pipeline coverage</h3>
+<ul>
+<li>Automated channel QC and interpolation</li>
+<li>Memory-aware epoch preparation and caching</li>
+<li>N100–late-positive ERP feature windows</li>
+<li>GFP-peak clustering and cluster-count evaluation</li>
+<li>Backfitting, transitions and complexity metrics</li>
+<li>Mixed-effects models, FDR control and reports</li>
+</ul>
+</aside>
+</div>
+</article>
+
+<article class="software-project" id="oddball">
+<p class="tag">Human study design · research in development</p>
+<h2>Mixed audiovisual oddball experiment</h2>
+<div class="project-meta">
+<span>PsychoPy</span>
+<span>English / Hindi</span>
+<span>Event markers</span>
+<span>Working memory</span>
+<span>Reaction time</span>
+</div>
+<div class="project-layout">
+<div>
+<p>I recently designed this experimental protocol for a planned cross-sectional study investigating how semantic context may influence candidate markers of ageing across people engaged in different meditation practices.</p>
+<p>The protocol combines a five-minute baseline, audiovisual oddball blocks, working-memory and reaction-time tasks, randomized ordering, bilingual instructions, post-task surveys and DASS-21. Timestamped events and explicit section markers are designed to support synchronization with physiological recordings.</p>
+<div class="actions">
+<a class="button primary" href="downloads/mixed-oddball-experiment.zip" download>Download project bundle</a>
+<a class="button" href="code/mixed-oddball-experiment/Mix_Odd_Ball_Improved_Audio_Final_with_survey.py" download>Script only</a>
+<a class="button" href="code/mixed-oddball-experiment/README.md">Read protocol notes</a>
+</div>
+</div>
+<aside class="evidence">
+<h3>Study-design strengths</h3>
+<ul>
+<li>Multimodal stimulus control</li>
+<li>Rare/standard event randomization</li>
+<li>Acquisition-system marker logging</li>
+<li>Behavioural and survey measures</li>
+<li>Participant-facing bilingual flow</li>
+</ul>
+<p>
+<strong>Status:</strong> protocol code, not a validated clinical or diagnostic instrument.</p>
+</aside>
+</div>
+</article>
+
+<section class="verification" id="verification">
+<p class="kicker">Transparent review status</p>
+<h2>What has—and has not—been verified</h2>
+<p>The two Python entry points pass static syntax compilation, notebook outputs and machine-specific paths have been removed from the public copies, and every project was reviewed at function/cell level to prepare these descriptions. End-to-end scientific execution was not performed here because it requires the original datasets, acquisition hardware and compatible specialist environments. The project notes identify those requirements and validation responsibilities.</p>
+</section>
+<p>
+<a class="button" href="index.html#contact">Discuss a research collaboration</a>
+</p>
+</main>
+<footer>
+<p>© <span id="year">
+</span> Shivom Gupta</p>
+<a href="#software">Back to top ↑</a>
+</footer>
+<script src="assets/js/portfolio.js">
+</script>
+</body>
+</html>
