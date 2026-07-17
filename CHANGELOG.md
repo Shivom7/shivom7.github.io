@@ -1,16 +1,5 @@
 # Changelog
 
-<<<<<<< HEAD
-## 2026-07-17
-
-- Reduced large heading sizes and tightened vertical spacing between major sections.
-- Redesigned the research cards with stronger evidence links to Sakshi Sense, mixed oddball code, GPJM, the exoplanet pipeline and the P300/microstates repository.
-- Removed the "Selected technical work" subsection from the landing page.
-- Strengthened the Education & funding section and separated Teaching from Supervision.
-- Simplified Outreach to four photographs and refreshed the data-analysis project language.
-
-=======
->>>>>>> 1279073eaea5daa897be582cedb12019043672c9
 ## 2026-07-13
 
 - Replaced the placeholder EEG documentation with a reviewed research-software portfolio covering GPJM simulation, EEG/P300/microstate analysis, and a mixed audiovisual oddball experiment.
