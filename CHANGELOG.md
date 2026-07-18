@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-07-18
+
+- Rebuilt the four research cards as a consistent academic portfolio grid with compact numbering and clear evidence links.
+- Presented the mixed audiovisual oddball work as human study design in development, without implying that it has a GitHub repository.
+- Strengthened degree and funding hierarchy with award amounts, funders and a more prominent MSc thesis link.
+- Visually separated cohort Teaching from undergraduate Supervision and clarified the scope of each role.
+- Further reduced global heading scale and section spacing for a denser, more mature reading rhythm.
+- Preserved exactly four uncropped outreach photographs and responsive layouts for phones.
+
+## 2026-07-17
+
+- Reduced large heading sizes and tightened vertical spacing between major sections.
+- Redesigned the research cards with stronger evidence links to Sakshi Sense, mixed oddball code, GPJM, the exoplanet pipeline and the P300/microstates repository.
+- Removed the "Selected technical work" subsection from the landing page.
+- Strengthened the Education & funding section and separated Teaching from Supervision.
+- Simplified Outreach to four photographs and refreshed the data-analysis project language.
+
 ## 2026-07-13
 
 - Replaced the placeholder EEG documentation with a reviewed research-software portfolio covering GPJM simulation, EEG/P300/microstate analysis, and a mixed audiovisual oddball experiment.
