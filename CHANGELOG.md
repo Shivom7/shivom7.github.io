@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-18 · final corrections
+
+- Removed `research-software.html` and its sitemap and README references.
+- Linked project 01 directly to `Shivom7/Mixed_audiovisual_oddball_experiment`.
+- Rebuilt Skills as a two-column expertise matrix with evidence-based Advanced and Intermediate ratings; removed Linux and Visualization.
+- Replaced the first three outreach images with both Communication photographs and the second Collaboration photograph from the Wix portfolio; retained the fourth existing photograph.
+
 ## 2026-07-18
 
 - Rebuilt the four research cards as a consistent academic portfolio grid with compact numbering and clear evidence links.

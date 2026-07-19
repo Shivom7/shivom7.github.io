@@ -107,3 +107,23 @@ html[data-theme="dark"] .supervision-block{background:linear-gradient(135deg,rgb
   .subsection-title{align-items:flex-start}
   .teaching-list article{grid-template-columns:40px 1fr;gap:.8rem}
 }
+
+/* Evidence-based skill levels */
+.skills-prominent .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 2.5rem}
+.skills-prominent .skills-grid article{padding:1.35rem 0 0;background:transparent;border-radius:0;border-top:1px solid var(--line)}
+.skills-prominent .skills-grid article h3{margin-bottom:.7rem;color:var(--teal);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase}
+.skill-levels{list-style:none;margin:0;padding:0}
+.skill-levels li{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding:.62rem 0;border-bottom:1px solid rgba(16,38,45,.1)}
+.skill-levels li span{font-size:1.02rem;color:var(--ink)}
+.skill-levels li strong{flex:0 0 auto;color:var(--muted);font-size:.88rem;font-weight:500}
+html[data-theme="dark"] .skills-prominent .skills-grid article{background:transparent}
+html[data-theme="dark"] .skill-levels li{border-bottom-color:rgba(231,240,238,.13)}
+html[data-theme="dark"] .skill-levels li span{color:var(--ink)}
+@media(max-width:760px){
+  .skills-prominent .skills-grid{grid-template-columns:1fr;gap:1.5rem}
+}
+@media(max-width:420px){
+  .skill-levels li{align-items:flex-start}
+  .skill-levels li span{font-size:.96rem}
+  .skill-levels li strong{font-size:.82rem}
+}

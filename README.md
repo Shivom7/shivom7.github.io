@@ -13,7 +13,6 @@ Open `http://localhost:8000`. No build step or package installation is required.
 ## Structure
 
 - `index.html` — main portfolio
-- `research-software.html` — reviewed research-code and experiment portfolio
 - `code/` — public, repository-ready project bundles with technical notes
 - `assets/css/portfolio.css` — design system and responsive layout
 - `assets/js/portfolio.js` — mobile navigation, persistent theme control and copyright year
