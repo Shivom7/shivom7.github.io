@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-28
+
+- Added a single authoritative responsive layer so mobile uses the same typography, colors, cards, imagery, dark mode and complete content as desktop.
+- Refined the phone navigation, hero portrait, research cards, skills matrix, education/funding, teaching/supervision and outreach layouts.
+- Added asset versioning to prevent mobile browsers from displaying older cached styles and scripts.
+
 ## 2026-07-18 · final corrections
 
 - Removed `research-software.html` and its sitemap and README references.

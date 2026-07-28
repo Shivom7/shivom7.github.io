@@ -127,3 +127,89 @@ html[data-theme="dark"] .skill-levels li span{color:var(--ink)}
   .skill-levels li span{font-size:.96rem}
   .skill-levels li strong{font-size:.82rem}
 }
+
+/* Mobile parity layer: same visual language and content as desktop */
+@media(max-width:860px){
+  body{font-size:16.5px;line-height:1.68}
+  .site-header{height:68px;padding:0 1rem;gap:.55rem;background:rgba(247,245,239,.97);box-shadow:0 8px 24px rgba(7,28,36,.06)}
+  .site-header .brand{margin-right:auto;font-size:.94rem}
+  .site-header .brand span{width:2.15rem;height:2.15rem}
+  .theme-toggle,.menu-button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;border-color:var(--line);background:var(--white);color:var(--ink)}
+  .theme-toggle{width:40px;margin:0}
+  .menu-button{margin:0;padding:.5rem .78rem;font:700 .8rem Manrope,sans-serif}
+  .site-header nav{top:68px;left:.75rem;right:.75rem;padding:.8rem;background:var(--white);border:1px solid var(--line);border-radius:0 0 1rem 1rem;box-shadow:0 18px 42px rgba(7,28,36,.14)}
+  .site-header nav.open{display:flex;gap:.15rem}
+  .site-header nav a{padding:.72rem .75rem;border-radius:.55rem;font-size:.95rem}
+  .site-header nav a:hover{background:rgba(29,108,109,.08)}
+
+  .hero{display:grid;grid-template-columns:1fr;gap:2.25rem;min-height:0;padding:3.5rem 1rem 3.75rem}
+  .hero-copy{display:flex;flex-direction:column;align-items:flex-start}
+  .hero h1{max-width:12ch;font-size:clamp(2.65rem,11vw,3.8rem);letter-spacing:-.052em}
+  .hero .lede{max-width:42rem;font-size:1.08rem}
+  .hero .actions{width:100%;margin:1.5rem 0}
+  .hero .actions .button{width:auto;min-width:0}
+  .portrait{width:100%;min-height:0;aspect-ratio:16/11;margin:0;border-radius:1.25rem;background-position:60% center;background-size:cover;box-shadow:0 18px 42px rgba(7,28,36,.12)}
+
+  .section,.section.alt{padding-top:4rem;padding-bottom:4rem;padding-left:1rem;padding-right:1rem}
+  .about-original .section{padding-left:1rem;padding-right:1rem}
+  .two-column{grid-template-columns:1fr;gap:1.25rem}
+  .section-heading{display:block;max-width:760px;margin-bottom:1.8rem}
+  .section-heading>p{max-width:42rem;margin:.65rem 0 0;font-size:1rem}
+  h2{font-size:clamp(2rem,7.7vw,2.85rem)}
+
+  .skills-prominent .skills-grid,.research-grid,.education-grid,.funding-featured ul,.research-highlights,.outreach-gallery{grid-template-columns:1fr}
+  .skills-prominent .skills-grid{gap:1.35rem}
+  .skills-prominent .skills-grid article{padding-top:1.1rem}
+  .skill-levels li{padding:.64rem 0}
+
+  .research-grid{gap:1rem}
+  .research-grid .card{min-height:0;padding:1.5rem;border-left-width:4px;border-radius:1rem;box-shadow:0 12px 28px rgba(7,28,36,.055)}
+  .research-grid .featured{background:var(--navy);color:#fff}
+  .research-grid .chips{margin-bottom:0}
+  .research-evidence,.research-repository{width:100%}
+  .research-highlights{gap:.65rem;margin:1.75rem 0 3rem}
+  .research-highlights article{padding:1.1rem 1.2rem;background:rgba(255,255,255,.36);border-left-width:3px}
+  .leadership-note{grid-template-columns:1fr;gap:.65rem;margin-bottom:3rem;padding:1.5rem;border-radius:1rem}
+
+  .timeline article{grid-template-columns:1fr;gap:.4rem;padding:1.65rem 0}
+  .timeline article>div{max-width:none}
+  .publication-list li{padding:1rem .5rem 1rem 2.8rem}
+  .publication-list li:before{left:.2rem}
+
+  .education-grid{gap:1rem}
+  .education-grid article{padding:1.5rem;border-radius:1rem}
+  .funding-featured{grid-template-columns:1fr;gap:1.25rem;padding:1.35rem;border-radius:1rem}
+  .funding-featured ul{gap:.75rem}
+  .funding-featured li{min-height:0;padding:1rem}
+
+  .teaching-block{padding:1.35rem;border-radius:1rem}
+  .subsection-title{align-items:flex-start}
+  .teaching-list article{grid-template-columns:42px 1fr;gap:.85rem;padding:1.1rem 0}
+  .teaching-list h3{font-size:1.15rem}
+
+  .outreach-gallery{gap:1rem}
+  .outreach-gallery figure{border-radius:1rem}
+  .outreach-gallery img,.outreach-gallery .wide img{width:100%;height:auto;max-height:none;object-fit:contain}
+  .outreach-gallery figcaption{min-height:0;padding:.9rem 1rem}
+
+  .contact-section{padding:4.25rem 1rem}
+  .contact-section .actions{gap:.65rem}
+  footer{padding:1.5rem 1rem;gap:.75rem;flex-wrap:wrap}
+
+  html[data-theme="dark"] .site-header{background:rgba(8,27,33,.97)}
+  html[data-theme="dark"] .site-header nav{background:#10282f}
+  html[data-theme="dark"] .research-highlights article{background:rgba(16,40,47,.58)}
+}
+
+@media(max-width:520px){
+  .brand{max-width:48vw}
+  .hero{padding-top:3rem}
+  .hero h1{font-size:clamp(2.45rem,12.5vw,3.35rem)}
+  .hero .actions .button{width:100%}
+  .portrait{aspect-ratio:4/3}
+  .section,.section.alt{padding-top:3.5rem;padding-bottom:3.5rem}
+  .research-grid .card,.education-grid article,.teaching-block{padding:1.25rem}
+  .research-evidence strong{font-size:.95rem}
+  .subsection-title>span{font-size:.72rem}
+  .contact-section .button{width:100%}
+}
