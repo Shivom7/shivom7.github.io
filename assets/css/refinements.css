@@ -213,3 +213,29 @@ html[data-theme="dark"] .skill-levels li span{color:var(--ink)}
   .subsection-title>span{font-size:.72rem}
   .contact-section .button{width:100%}
 }
+
+/* Compact section rhythm and clearer section labels */
+.section,.section.alt{padding-top:3.9rem;padding-bottom:3.9rem}
+.skills-prominent{padding-top:3.75rem;padding-bottom:3.75rem}
+.contact-section{padding-top:4.15rem;padding-bottom:4.15rem}
+.hero .eyebrow,main section .kicker{font-size:.96rem;line-height:1.4;letter-spacing:.145em}
+.section-heading{margin-bottom:1.65rem}
+.timeline article{grid-template-columns:165px 1fr;gap:1.35rem;padding:1.4rem 0}
+.timeline h3{margin-bottom:.55rem}
+.timeline p{margin:.45rem 0}
+.timeline .chips{margin:.8rem 0 0}
+
+@media(max-width:860px){
+  .hero{padding-top:3.1rem;padding-bottom:3.15rem}
+  .section,.section.alt{padding-top:3.2rem;padding-bottom:3.2rem}
+  .skills-prominent{padding-top:3.15rem;padding-bottom:3.15rem}
+  .contact-section{padding-top:3.6rem;padding-bottom:3.6rem}
+  .hero .eyebrow,main section .kicker{font-size:.91rem}
+  .timeline article{grid-template-columns:1fr;gap:.3rem;padding:1.2rem 0}
+}
+
+@media(max-width:520px){
+  .section,.section.alt{padding-top:2.85rem;padding-bottom:2.85rem}
+  .skills-prominent{padding-top:2.85rem;padding-bottom:2.85rem}
+  .section-heading{margin-bottom:1.45rem}
+}

@@ -5,6 +5,9 @@
 - Added a single authoritative responsive layer so mobile uses the same typography, colors, cards, imagery, dark mode and complete content as desktop.
 - Refined the phone navigation, hero portrait, research cards, skills matrix, education/funding, teaching/supervision and outreach layouts.
 - Added asset versioning to prevent mobile browsers from displaying older cached styles and scripts.
+- Reduced section-to-section and Experience timeline spacing while increasing section-label typography.
+- Updated every requested Skills proficiency rating and renamed Scientific library & computing.
+- Expanded and reordered Experience entries with CV-supported responsibilities, methods, cohort sizes and outcomes.
 
 ## 2026-07-18 · final corrections
 
