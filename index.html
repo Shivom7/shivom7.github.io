@@ -35,6 +35,31 @@
 </header>
 <link rel="stylesheet" href="assets/css/refinements.css?v=20260728-2">
 <style>.portrait{background-color:#dfe9e6;background-image:url('images/shivom.jpg'),radial-gradient(circle,rgba(29,108,109,.2) 0 1.5px,transparent 2px),linear-gradient(145deg,#eef3f0 0%,#d9e7e3 50%,#c8dbd6 100%);background-position:60% center,0 0,center;background-repeat:no-repeat,repeat,no-repeat;background-size:112% auto,32px 32px,cover;box-shadow:inset 0 0 80px rgba(29,108,109,.12)}.portrait-square img{display:none}.card-index{margin-bottom:1.25rem}</style>
+<style>
+/* Keep background dots behind all website content */
+body::before {
+  z-index: 0;
+}
+
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Centre the three research-summary columns */
+.research-highlights article {
+  min-height: 150px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Remove the final line after every Skills subsection */
+.skill-levels li:last-child {
+  border-bottom: 0;
+}
+</style>
 <main id="main">
 <section class="hero" aria-labelledby="hero-title">
 <div class="hero-copy">
